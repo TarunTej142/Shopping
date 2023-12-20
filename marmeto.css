@@ -1,0 +1,287 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html, body{
+    font-family: 'Inter', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.main_wrapper{
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;  
+     
+
+}
+.product-div{
+    margin: 1rem 0; 
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+    border-radius: 3px;
+    column-gap: 10px;
+}
+
+.product-left{
+    padding: 5px;
+    padding-right: 60px;
+}
+
+.product-right{
+    padding: 10px;
+    padding-left: 50px;
+}
+
+.img_container img{
+
+    width: 350px;
+    margin: 0 auto;
+
+}
+
+.thumbnails{
+    display: flex;
+    /*flex-wrap: wrap;*/
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+
+}
+.thumbnails img{
+    width: 90px;
+    height: 110px;
+}
+
+.thumbnails div{
+
+    border: 2px solid lightgray;
+    padding: 0px;
+    border-radius: 4px;
+    margin: 0 5px 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.active{
+    border-color: darkblue!important;
+}
+
+.thumbnails div:hover{
+    border-color: darkslateblue;
+
+}
+
+
+.product-right span{
+    display: block;
+    
+    
+}
+
+.product-details{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.product_vendor{
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: gray;
+    opacity: 0.4;
+    
+}
+
+.product_title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.price_discount{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+}
+
+.price_discount :first-child{
+    margin-right: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.product_price{
+    font-size: 25px;
+    font-weight: bold;
+    color: darkblue;
+}
+.product_discount_percentage{
+    font-size: 15px;
+    font-weight: normal;
+    color: lightcoral;
+    margin-top: 5px;
+
+}
+
+.original_price{
+    font-size: 15px;
+    font-weight: thin;
+    color: gray;
+    text-decoration: line-through;
+    margin-top: 5px;
+}
+
+.product_price_details{
+
+    margin-top :10px;
+    margin-bottom: 20px;
+}
+
+.color_selector{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+.color_square {
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    display: flex;
+    padding: 10px;
+      
+}
+.selected_sq_border{
+
+    border: 2px solid;
+
+}
+.size_selector{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+
+.radio_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(243, 243, 243, 1);
+    color: rgba(114, 108, 108, 1);
+    padding: 4px 5px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.selected_size{
+    background: rgba(237, 240, 248, 1);
+    color: rgba(58, 73, 128, 1);
+
+}
+
+.qty_addtocart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 8px;
+}
+
+.quantity{
+    width: 169px;
+    height: 59px;
+    border-radius: 29.5px;
+    background: rgba(243, 243, 243, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px  20px;
+}
+
+.updown{
+    width: 9px;
+    height: 22px;
+    size: 20px;
+    background: transparent;
+    border: transparent;
+    font-size: 20px;
+    font-weight: normal;
+
+}
+
+#counter{
+    width: 11px;
+    height: 27px;
+    background: transparent;
+    border: transparent;
+    font-size: 22px;
+    font-weight: 700;
+    color: rgba(58, 73, 128, 1);
+
+}
+
+.addtocart{
+    width: 309px;
+    height: 59px;
+    border-radius: 29.5px;
+    background: rgba(58, 73, 128, 1);
+    color: white;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: auto;
+
+}
+
+#Addtocart_Button{
+    margin: 10px;
+    background: transparent;
+    border: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+
+}
+
+.onAdd{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 495px;
+    height: 31px;
+    gap: 11px;
+    border-radius: 8px;
+    padding: 7px 1px 7px 1px;
+    background: rgba(231, 248, 183, 1);
+
+}
